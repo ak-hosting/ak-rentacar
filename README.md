@@ -7,7 +7,7 @@
 
 Bursa'daki oto kiralama firmaları için ücretsiz, modern ve mobil uyumlu web şablonu. Bootstrap 5 ile geliştirildi.
 
-**[Demo Site](https://ak-hosting.github.io/ak-rentacar/)** | **[Özelleştirme Talebi](mailto:ak@ak-pro.com)**
+**[🌐 Demo Site](https://ak-hosting.github.io/ak-rentacar/)** | **[📧 Özelleştirme Talebi](mailto:ak@ak-pro.com)** | **[📋 GitHub Repository](https://github.com/ak-hosting/ak-rentacar)**
 
 ## 🚗 Temel Özellikler
 
