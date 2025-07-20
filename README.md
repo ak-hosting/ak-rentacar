@@ -21,6 +21,11 @@ Bursa'daki oto kiralama firmaları için ücretsiz, modern ve mobil uyumlu web �
 
 ## 🔧 Kurulum
 
+### GitHub Pages (Önerilen)
+
+Proje otomatik olarak GitHub Pages'te yayınlanmaktadır:
+**🌐 https://ak-hosting.github.io/ak-rentacar/**
+
 ### Gereksinimler
 - Modern web tarayıcısı
 - HTTP sunucusu (opsiyonel)
