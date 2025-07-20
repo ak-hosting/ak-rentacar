@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ak-hosting.github.io/ak-rentacar/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /docker-compose.yml
+Disallow: /Dockerfile*
+
+# Allow assets
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/ 

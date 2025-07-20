@@ -1,0 +1,84 @@
+# GitHub Pages Jekyll Configuration
+# Bursa Oto Kiralama Web Şablonu
+
+# Site settings
+title: AK Rentacar - Bursa Oto Kiralama
+description: Bursa'da güvenilir oto kiralama hizmeti. Ekonomi, SUV ve lüks araçlar.
+url: https://ak-hosting.github.io
+baseurl: /ak-rentacar
+
+# Author information
+author:
+  name: AK Hosting
+  email: ak@ak-pro.com
+  bio: Bursa'da profesyonel oto kiralama hizmeti
+  location: Bursa, Türkiye
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  vehicles:
+    output: true
+    permalink: /vehicles/:name/
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Dockerfile*
+  - docker-compose.yml
+  - .dockerignore
+  - .env*
+  - node_modules/
+  - .git/
+  - .github/
+
+# Include in processing
+include:
+  - assets/
+  - images/
+  - css/
+  - js/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "AK Hosting"
+
+# SEO
+google_analytics: ""
+google_verification: ""
+bing_verification: ""
+
+# Social media
+social:
+  name: AK Rentacar
+  links:
+    - https://github.com/ak-hosting
+    - mailto:ak@ak-pro.com
+
+# Theme settings
+theme_settings:
+  # Meta
+  title: AK Rentacar
+  avatar: assets/images/logo.webp
+  favicon: assets/images/logo.webp
+  
+  # Header and footer text
+  header_text: >
+    <h1>AK Rentacar</h1>
+    <p>Bursa'da güvenilir oto kiralama hizmeti</p>
+  
+  footer_text: >
+    <p>&copy; 2025 AK Rentacar. Tüm hakları saklıdır.</p> 
