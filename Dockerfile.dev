@@ -1,0 +1,29 @@
+# Bursa Oto Kiralama - Development Dockerfile
+# Hot reload ve geliştirme araçları ile
+
+FROM node:18-alpine
+
+# Çalışma dizinini ayarla
+WORKDIR /app
+
+# Package.json dosyasını kopyala (eğer varsa)
+COPY package*.json ./
+
+# Bağımlılıkları yükle (eğer varsa)
+RUN npm install || echo "No package.json found"
+
+# Kaynak kodları kopyala
+COPY . .
+
+# Gerekli araçları yükle
+RUN apk add --no-cache \
+    curl \
+    git \
+    vim \
+    && npm install -g live-server || echo "live-server not needed"
+
+# Port aç
+EXPOSE 3000
+
+# Development server başlat
+CMD ["live-server", "--port=3000", "--host=0.0.0.0", "--no-browser", "/app"] 
