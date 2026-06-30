@@ -315,11 +315,11 @@
             </h2>
             <div class="row">
                 <div class="col-lg-8">
-                    <form id="reservation-form">
+                    <form id="reservation-form" novalidate>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label">Alış Lokasyonu</label>
-                                <select class="form-select" required>
+                                <label for="pickup-location" class="form-label">Alış Lokasyonu</label>
+                                <select class="form-select" id="pickup-location" name="pickup-location" required>
                                     <option value="">Lokasyon Seçin</option>
                                     <option value="airport">Bursa Havalimanı</option>
                                     <option value="osmangazi">Osmangazi Merkez</option>
@@ -327,8 +327,8 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">İade Lokasyonu</label>
-                                <select class="form-select" required>
+                                <label for="return-location" class="form-label">İade Lokasyonu</label>
+                                <select class="form-select" id="return-location" name="return-location" required>
                                     <option value="">Lokasyon Seçin</option>
                                     <option value="airport">Bursa Havalimanı</option>
                                     <option value="osmangazi">Osmangazi Merkez</option>
@@ -336,16 +336,16 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Alış Tarihi</label>
-                                <input type="date" class="form-control" required>
+                                <label for="pickup-date" class="form-label">Alış Tarihi</label>
+                                <input type="date" class="form-control" id="pickup-date" name="pickup-date" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">İade Tarihi</label>
-                                <input type="date" class="form-control" required>
+                                <label for="return-date" class="form-label">İade Tarihi</label>
+                                <input type="date" class="form-control" id="return-date" name="return-date" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Alış Saati</label>
-                                <select class="form-select" required>
+                                <label for="pickup-time" class="form-label">Alış Saati</label>
+                                <select class="form-select" id="pickup-time" name="pickup-time" required>
                                     <option value="">Saat Seçin</option>
                                     <option value="08:00">08:00</option>
                                     <option value="09:00">09:00</option>
@@ -361,8 +361,8 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">İade Saati</label>
-                                <select class="form-select" required>
+                                <label for="return-time" class="form-label">İade Saati</label>
+                                <select class="form-select" id="return-time" name="return-time" required>
                                     <option value="">Saat Seçin</option>
                                     <option value="08:00">08:00</option>
                                     <option value="09:00">09:00</option>
@@ -378,8 +378,8 @@
                                 </select>
                             </div>
                             <div class="col-12">
-                                <label class="form-label">Araç Kategorisi</label>
-                                <select class="form-select" required>
+                                <label for="category" class="form-label">Araç Kategorisi</label>
+                                <select class="form-select" id="category" name="category" required>
                                     <option value="">Kategori Seçin</option>
                                     <option value="economy">Ekonomi</option>
                                     <option value="suv">SUV</option>
@@ -388,12 +388,32 @@
                                 </select>
                             </div>
                             <div class="col-12">
+                                <label for="vehicle" class="form-label">Tercih Edilen Araç</label>
+                                <select class="form-select" id="vehicle" name="vehicle">
+                                    <option value="">Kategori secildikten sonra arac listesi guncellenir</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="customer-name" class="form-label">Ad Soyad</label>
+                                <input type="text" class="form-control" id="customer-name" name="customer-name" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="customer-email" class="form-label">E-posta</label>
+                                <input type="email" class="form-control" id="customer-email" name="customer-email" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="customer-phone" class="form-label">Telefon</label>
+                                <input type="tel" class="form-control" id="customer-phone" name="customer-phone" required>
+                            </div>
+                            <div class="col-12">
                                 <button type="submit" class="btn btn-warning btn-lg w-100">
                                     <i class="fas fa-check me-2"></i>Rezervasyonu Tamamla
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    
+    <p class="small mt-3 mb-0 demo-form-hint" style="opacity: 0.85;">Bu form, demo senaryosu icin hazirlanmistir. Gercek bir rezervasyon, tedavi, uyelik veya hizmet kaydi olusturmaz. Ayrintilar icin <a href="datenschutz.html">Datenschutz</a> ve <a href="impressum.html">Impressum</a>.</p>
+</form>
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-secondary">
@@ -572,7 +592,9 @@
                                 <button type="submit" class="btn btn-primary">Gönder</button>
                             </div>
                         </div>
-                    </form>
+                    
+    <p class="small mt-3 mb-0 demo-form-hint" style="opacity: 0.85;">Bu form, demo senaryosu icin hazirlanmistir. Gercek bir rezervasyon, tedavi, uyelik veya hizmet kaydi olusturmaz. Ayrintilar icin <a href="datenschutz.html">Datenschutz</a> ve <a href="impressum.html">Impressum</a>.</p>
+</form>
                 </div>
                 <div class="col-lg-4">
                     <div class="contact-info">
@@ -625,7 +647,20 @@
                 </div>
             </div>
         </div>
-    </footer>
+    
+    <div class="container pt-3 border-top border-secondary mt-3 demo-legal-links">
+        <div class="row g-3 align-items-center">
+            <div class="col-lg-8">
+                <p class="small text-white-50 mb-1">Bu web sitesi, portfoy amacli kurgusal bir demo projedir. Gosterilen marka, yorumlar, fiyatlar, referanslar ve iletisim senaryolari ornekleme amaclidir.</p>
+                <p class="small text-white-50 mb-0">Ersteller / Sorumlu Kisi: A Koc - <a href="mailto:ak@ak-pro.com" class="text-white">ak@ak-pro.com</a> - <a href="tel:+905301615609" class="text-white">+90 530 161 56 09</a></p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="impressum.html" class="text-white me-3">Impressum</a>
+                <a href="datenschutz.html" class="text-white">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

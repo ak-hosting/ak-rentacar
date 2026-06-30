@@ -231,19 +231,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Service Worker registration (PWA için)
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/sw.js')
-                .then(function(registration) {
-                    console.log('ServiceWorker registration successful');
-                })
-                .catch(function(err) {
-                    console.log('ServiceWorker registration failed');
-                });
-        });
-    }
-
     // Offline detection
     window.addEventListener('online', function() {
         showNotification('İnternet bağlantısı yeniden kuruldu!', 'success');
@@ -252,30 +239,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('offline', function() {
         showNotification('İnternet bağlantısı kesildi. Lütfen bağlantınızı kontrol edin.', 'error');
     });
-
-    // Geolocation (Bursa için)
-    if ('geolocation' in navigator) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            const userLat = position.coords.latitude;
-            const userLng = position.coords.longitude;
-            
-            // Bursa koordinatları (yaklaşık)
-            const bursaLat = 40.1885;
-            const bursaLng = 29.0610;
-            
-            // Mesafe hesaplama (basit)
-            const distance = Math.sqrt(
-                Math.pow(userLat - bursaLat, 2) + 
-                Math.pow(userLng - bursaLng, 2)
-            ) * 111; // km cinsinden
-            
-            if (distance < 50) { // 50km içindeyse
-                console.log('Kullanıcı Bursa bölgesinde');
-            }
-        }, function(error) {
-            console.log('Konum alınamadı:', error.message);
-        });
-    }
 
     // Console welcome message
     console.log(`
