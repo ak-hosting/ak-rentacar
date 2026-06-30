@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Bursa Rentacar Portfolio Demo">
+  <rect width="1200" height="630" fill="#111827"/>
+  <circle cx="920" cy="140" r="170" fill="#3b82f6" opacity="0.18"/>
+  <circle cx="180" cy="520" r="210" fill="#22c55e" opacity="0.16"/>
+  <rect x="70" y="70" width="1060" height="490" rx="36" fill="none" stroke="#f8fafc" stroke-opacity="0.25" stroke-width="6"/>
+  <text x="100" y="250" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700">Bursa Rentacar</text>
+  <text x="100" y="340" fill="#93c5fd" font-family="Arial, Helvetica, sans-serif" font-size="34">Portfolio Demo Web Sitesi</text>
+  <text x="100" y="398" fill="#d1d5db" font-family="Arial, Helvetica, sans-serif" font-size="28">Kurgusal marka, ornek icerik ve demo senaryosu</text>
+  <text x="100" y="500" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="22">ak-hosting.github.io/ak-rentacar/</text>
+</svg>
