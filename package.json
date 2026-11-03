@@ -1,0 +1,1 @@
+{"name":"ak-rentacar","version":"2.0.0","private":true,"description":"Araç kiralama firmaları için işlevsel GitHub Pages şablonu","scripts":{"test":"node scripts/validate.mjs","lint":"node --check assets/js/main.js && node scripts/validate.mjs","build":"node scripts/validate.mjs"},"license":"MIT","homepage":"https://ak-hosting.github.io/ak-rentacar/","engines":{"node":">=18"}}
